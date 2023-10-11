@@ -1,10 +1,10 @@
 print(f'{"-"*20}开始加载第三方库{"-"*20}')
 import os
-import cv2
+import cv2  # opencv-contrib-python
 import time
 from pathlib import Path
-from easyocr import Reader
-from PIL import Image, ImageDraw, ImageFont
+from easyocr import Reader  # easyocr
+from PIL import Image, ImageDraw, ImageFont  # pillow
 
 
 class OcrReader(object):
