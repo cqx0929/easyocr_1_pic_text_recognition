@@ -28,7 +28,7 @@ class OcrReader(object):
         return reader
 
 
-class TextRecognizer(object):
+class PicTextRecognizer(object):
     def __init__(self, reader, img_dir, img_name, res_dir, save=True, show=False):
         # 加载Reader
         print(f'{"-"*20}开始加载Reader{"-"*20}')
@@ -119,7 +119,7 @@ class TextRecognizer(object):
 
 if __name__ == '__main__':
     rd = OcrReader().reader
-    tr = TextRecognizer(reader=rd,
+    tr = PicTextRecognizer(reader=rd,
                         img_dir='images',
                         img_name='traffic_sign.jpg',
                         res_dir='0_res',
